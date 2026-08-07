@@ -1,0 +1,24 @@
+venv/
+__pycache__/
+.env
+
+# Notes de travail privées, pas prêtes à être publiques
+specs/
+
+# Fichiers maîtres binaires (Affinity, Blender, QGIS), déjà synchronisés par Google Drive
+sources/
+
+# Données brutes téléchargées, régénérables par le pipeline (licence GADM non-commerciale)
+data/raw/geopackages-lands-gadm/
+data/raw/dem_test/
+
+# Rasters dérivés, régénérables par le pipeline QGIS/Blender
+data/processed/*.tif
+data/processed/*.tif.aux.xml
+data/processed/png_dem_rendered.png
+
+# Itérations de mise au point, non citées dans la spec
+output/archive/
+
+.DS_Store
+Thumbs.db
