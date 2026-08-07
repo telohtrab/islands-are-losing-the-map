@@ -8,9 +8,11 @@ specs/
 # Fichiers maîtres binaires (Affinity, Blender, QGIS), déjà synchronisés par Google Drive
 sources/
 
-# Données brutes téléchargées, régénérables par le pipeline (licence GADM non-commerciale)
+# Données brutes téléchargées, régénérables par le pipeline (licence GADM non-commerciale,
+# et licence de redistribution PDH non vérifiée pour le CSV climat)
 data/raw/geopackages-lands-gadm/
 data/raw/dem_test/
+data/raw/SPC_DF_CLIMATE_CHANGE_COMPLETE.csv
 
 # Rasters dérivés, régénérables par le pipeline QGIS/Blender
 data/processed/*.tif

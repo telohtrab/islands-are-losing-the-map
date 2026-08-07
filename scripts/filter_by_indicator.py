@@ -2,12 +2,14 @@
 
 The raw download stacks every indicator in a single long table. Working from
 one file per indicator keeps the downstream scripts simple.
+
+Source: https://stats-sdmx-disseminate.pacificdata.org/rest/data/SPC,DF_CLIMATE_CHANGE,1.0/all?dimensionAtObservation=AllDimensions&format=csvfilewithlabels
 """
 
 import pandas as pd
 from scipy.stats import linregress
 
-CSV_PATH = "data/raw/SPC,DF_CLIMATE_CHANGE,1.0,filtered,2026-08-06 08-19-14.csv"
+CSV_PATH = "data/raw/SPC_DF_CLIMATE_CHANGE_COMPLETE.csv"
 
 # The PDH export is semicolon-delimited
 df = pd.read_csv(CSV_PATH, sep=";")
@@ -18,7 +20,7 @@ df = pd.read_csv(CSV_PATH, sep=";")
 st_anom = df[df["CLIMATE_CHANGE_INDICATORS"] == "ST_ANOM"]
 sst_anom = df[df["CLIMATE_CHANGE_INDICATORS"] == "SST_ANOM"]
 rain_anom = df[df["CLIMATE_CHANGE_INDICATORS"] == "RAIN_ANOM"]
-sea_level_anom = df[df["CLIMATE_CHANGE_INDICATORS"] == "SEA_LEVEL_ANOM"]
+sea_level_anom = df[df["CLIMATE_CHANGE_INDICATORS"] == "SEA_LVL"]
 
 st_anom.to_csv("data/processed/st_anom.csv", index=False)
 sst_anom.to_csv("data/processed/sst_anom.csv", index=False)
