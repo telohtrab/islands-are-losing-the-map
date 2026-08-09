@@ -2,9 +2,6 @@ venv/
 __pycache__/
 .env
 
-# Notes de travail privées, pas prêtes à être publiques
-specs/
-
 # Fichiers maîtres binaires (Affinity, Blender, QGIS), déjà synchronisés par Google Drive
 sources/
 

@@ -4,7 +4,7 @@ Work in progress for the [Pacific Dataviz Challenge](https://pacificdatavizchall
 
 A piece built on climate data from the [Pacific Data Hub](https://pacificdata.org/), covering the Pacific's island territories.
 
-Design details withheld while the competition is ongoing.
+Design details withheld while the competition is ongoing. Design notes and specs live in a private workspace repo, not tracked here.
 
 ## Contents
 
