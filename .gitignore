@@ -9,12 +9,15 @@ sources/
 # et licence de redistribution PDH non vérifiée pour le CSV climat)
 data/raw/geopackages-lands-gadm/
 data/raw/dem_test/
+data/raw/dem/
 data/raw/SPC_DF_CLIMATE_CHANGE_COMPLETE.csv
 
 # Rasters dérivés, régénérables par le pipeline QGIS/Blender
 data/processed/*.tif
 data/processed/*.tif.aux.xml
 data/processed/png_dem_rendered.png
+data/processed/dem_translated/
+data/processed/territoires_translate.gpkg
 
 # Itérations de mise au point, non citées dans la spec
 output/archive/
